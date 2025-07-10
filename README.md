@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌐 Dekamond Frontend (Next.js)
 
-## Getting Started
+This is the **frontend** for the Business Metrics AI Agent, built using **Next.js**. It connects to the FastAPI backend to send business data, receive insights, and display actionable recommendations.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+- 📈 Input daily sales, cost, and customer data
+- ⚙️ Sends requests to the FastAPI backend
+- 📊 Displays profit, CAC, and strategic recommendations
+- ⚡ Built with Next.js and React
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Install Dependencies
+
+Using **pnpm** (recommended):
+
+```bash
+pnpm install
+```
+
+Or using **npm**:
+
+```bash
+npm install
+```
+
+---
+
+### 2️⃣ Run the Development Server
+
+Using **pnpm**:
+
+```bash
+pnpm run dev
+```
+
+Or using **npm**:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🔗 Backend API
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Make sure the FastAPI backend is running at:
 
-## Learn More
+```
+http://localhost:8000
+```
 
-To learn more about Next.js, take a look at the following resources:
+> If you're making requests from the frontend to the backend, ensure CORS is configured correctly in FastAPI.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🧠 API Endpoint Used
 
-## Deploy on Vercel
+**POST** `/analyze`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Sends today and yesterday’s business data to the backend and receives:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- ✅ Profit/loss summary
+- ⚠️ Alerts (e.g., high CAC)
+- 📌 Recommendations
+
+---
+
+## 🛠 Technologies Used
+
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/) 
+- [Tailwind CSS](https://tailwindcss.com/) *
+
