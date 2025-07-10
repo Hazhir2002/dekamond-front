@@ -1,0 +1,31 @@
+.card {
+  @apply w-full md:w-[50rem] bg-card/60 max-w-md mx-auto backdrop-blur-lg shadow-2xl border-0;
+
+  & .cardTitle {
+    @apply text-2xl text-center font-bold;
+  }
+
+  & .cardDescription {
+    @apply text-center;
+  }
+
+  & .form {
+    @apply grid grid-cols-2 auto-rows-auto gap-x-5 gap-y-5;
+
+    & .phoneNumberContainer {
+      @apply space-y-2;
+
+      & label {
+        @apply block text-sm font-medium;
+      }
+
+      & .error {
+        @apply text-xs text-red-500 mt-1;
+      }
+    }
+
+    & .button {
+      @apply w-full py-2;
+    }
+  }
+}

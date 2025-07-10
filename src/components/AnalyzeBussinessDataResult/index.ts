@@ -1,0 +1,1 @@
+export { AnalyzeBussinessDataResult } from "./AnalyzeBussinessDataResult";

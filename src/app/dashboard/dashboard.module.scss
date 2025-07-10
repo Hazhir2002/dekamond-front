@@ -1,0 +1,19 @@
+.dashboard {
+  @apply relative;
+
+  & .greeting {
+    @apply w-full absolute top-10 left-1/2 -translate-x-1/2 text-3xl md:text-4xl font-bold text-center;
+  }
+
+  & .robot {
+    @apply h-[100vh] w-screen;
+  }
+
+  & .form {
+    @apply lg:absolute top-1/2 -translate-y-1/2 left-[4vw] p-5;
+  }
+
+  & .result {
+    @apply lg:absolute top-1/2 -translate-y-1/2 right-[4vw] p-5;
+  }
+}

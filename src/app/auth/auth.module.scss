@@ -1,0 +1,19 @@
+.container {
+  @apply min-h-screen  flex items-center justify-center bg-gradient-to-br from-agent-primary/30 via-agent-secondary/20 to-agent-dark/60 relative overflow-hidden;
+
+  .pulse1 {
+    @apply absolute top-0 left-0 w-96 h-96 bg-agent-primary/20 rounded-full blur-3xl animate-pulse -z-10;
+  }
+
+  .pulse2 {
+    @apply absolute bottom-0 right-0 w-96 h-96 bg-agent-secondary/20 rounded-full blur-3xl animate-pulse -z-10;
+  }
+
+  .formContainer {
+    @apply w-full relative max-w-md mx-auto flex flex-col items-center;
+
+    .robotContainer {
+      @apply absolute -top-[30vh] left-1/2 -translate-x-1/2 w-full h-[30vh];
+    }
+  }
+}
